@@ -1,0 +1,30 @@
+---
+import navData from "../data/navData";
+---
+
+<nav
+  class="flex justify-between h-[150px] items-center w-[90%] mx-auto"
+  id="nav-menu"
+>
+  <!-- logo -->
+  <div>
+    <img
+      src="https://assets.website-files.com/637484fce1607520c06e4c6d/63a68532d3398db48d8b4fd1_portlight-logo.svg"
+      alt="company logo"
+      width="150px"
+    />
+  </div>
+  <!-- logo -->
+
+  <!-- nav menu list  -->
+  <ul class="lg:flex w-[50%] justify-between">
+    {
+      navData.map((listData) => (
+        <li class="text-xl font-bold font-nunito hover:text-blue-900 duration-300">
+          <a href={listData.path}>{listData.name}</a>
+        </li>
+      ))
+    }
+  </ul>
+  <!-- nav menu list  -->
+</nav>

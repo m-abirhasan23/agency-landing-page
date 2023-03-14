@@ -1,0 +1,49 @@
+:root {
+  --clr-primary: #030211;
+  --clr-secondary: #fff;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Syne:wght@400;500;700;800&display=swap");
+
+#mobile-menu.active {
+  left: 0;
+}
+
+#nav-menu {
+  border-bottom: 0.5px solid rgba(51, 51, 51, 0.1);
+}
+#icon-rotate {
+  animation: rotate-infinite 3s linear infinite;
+}
+
+@keyframes rotate-infinite {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#hero-btn {
+  transition: background-color border 400ms ease;
+  -webkit-transition: background-color border 400ms ease;
+  -moz-transition: background-color border 400ms ease;
+  -ms-transition: background-color border 400ms ease;
+  -o-transition: background-color border 400ms ease;
+  border: 1px solid var(--clr-primary);
+}
+
+#hero-btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--clr-primary);
+  color: var(--clr-primary);
+}
+#hero-btn:hover svg {
+  animation: none;
+  -webkit-animation: none;
+}
+
+#hero-btn:hover svg path {
+  fill: var(--clr-primary);
+}

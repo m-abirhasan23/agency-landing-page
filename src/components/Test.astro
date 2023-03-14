@@ -1,0 +1,39 @@
+---
+---
+
+<div class="slider-wrapper">
+  <div class="slider">
+    <span>Slide 1</span>
+    <span>Slide 2</span>
+    <span>Slide 3</span>
+    <span>Slide 4</span>
+    <span>Slide 5</span>
+    <span>Slide 6</span>
+  </div>
+</div>
+
+<style>
+  .slider-wrapper {
+    overflow: hidden;
+  }
+
+  .slider {
+    display: inline-block;
+    white-space: wrap;
+    animation: marquee 10s linear infinite;
+  }
+
+  .slider span {
+    display: inline-block;
+    margin-right: 50px;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+</style>
