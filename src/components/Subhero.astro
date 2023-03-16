@@ -1,0 +1,29 @@
+---
+import heroData from "../data/data";
+import heroData2 from "../data/data2";
+import reverseCardData from "../data/reversedCardData";
+import Card from "./Card.astro";
+import Reverse from "./Reverse.astro";
+---
+
+<section>
+  {heroData.map((data) => <Card data={data} />)}
+</section>
+<section class="reverse-card">
+  {reverseCardData.map((data) => <Reverse data={data} />)}
+</section>
+<section>
+  {heroData2.map((data) => <Card data={data} />)}
+</section>
+
+<style>
+  section {
+    background-color: #f1f1f1;
+    padding-top: 4rem;
+  }
+
+  .reverse-card {
+    margin-top: 4rem;
+    background-color: #ffff;
+  }
+</style>

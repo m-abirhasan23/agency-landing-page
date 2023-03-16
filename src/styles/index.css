@@ -1,49 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;600;900&display=swap");
+
+@font-face {
+  font-family: "Headline-font";
+  src: url("../fonts/Neumatic-Compressed-Black.ttf");
+}
+@font-face {
+  font-family: "Regular-font";
+  src: url("../fonts/CooperHewitt-Medium.ttf");
+}
+@font-face {
+  font-family: "Regular-font-bold";
+  src: url("../fonts/CooperHewitt-Bold.ttf");
+}
+
 :root {
-  --clr-primary: #030211;
-  --clr-secondary: #fff;
+  --fontPrimary: "Outfit", sans-serif;
+  --fontSecondary: "Bebas Neue", cursive;
+
+  /* color list  */
+  --clr-black: #262626;
+  --clr-white: #f1f1fe;
+  --clr-blue: #6c00f4;
+
+  /* typography  */
+  --h6: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+  --h5: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
+  --h4: clamp(1.62rem, calc(1.5rem + 0.58vw), 1.95rem);
+  --h3: clamp(1.94rem, calc(1.77rem + 0.87vw), 2.44rem);
+  --h2: clamp(2.33rem, calc(2.08rem + 1.25vw), 3.05rem);
+  --h1: clamp(3.36rem, calc(2.87rem + 5.45vw), 5.77rem);
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Syne:wght@400;500;700;800&display=swap");
-
-#mobile-menu.active {
-  left: 0;
+body {
+  font-family: Regular-font;
+  font-weight: 400;
 }
 
-#nav-menu {
-  border-bottom: 0.5px solid rgba(51, 51, 51, 0.1);
-}
-#icon-rotate {
-  animation: rotate-infinite 3s linear infinite;
-}
+/* custom classes  */
 
-@keyframes rotate-infinite {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-#hero-btn {
-  transition: background-color border 400ms ease;
-  -webkit-transition: background-color border 400ms ease;
-  -moz-transition: background-color border 400ms ease;
-  -ms-transition: background-color border 400ms ease;
-  -o-transition: background-color border 400ms ease;
-  border: 1px solid var(--clr-primary);
-}
-
-#hero-btn:hover {
-  background-color: transparent;
-  border: 1px solid var(--clr-primary);
-  color: var(--clr-primary);
-}
-#hero-btn:hover svg {
-  animation: none;
-  -webkit-animation: none;
-}
-
-#hero-btn:hover svg path {
-  fill: var(--clr-primary);
+.subtitle {
+  font-family: Regular-font-bold;
+  font-size: var(--h2);
+  font-weight: bold;
+  width: 75%;
+  line-height: 100%;
+  padding-block: 0.5em;
 }

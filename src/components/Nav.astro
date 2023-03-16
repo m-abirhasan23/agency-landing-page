@@ -2,29 +2,69 @@
 import navData from "../data/navData";
 ---
 
-<nav
-  class="flex justify-between h-[150px] items-center w-[90%] mx-auto"
-  id="nav-menu"
->
-  <!-- logo -->
-  <div>
-    <img
-      src="https://assets.website-files.com/637484fce1607520c06e4c6d/63a68532d3398db48d8b4fd1_portlight-logo.svg"
-      alt="company logo"
-      width="150px"
-    />
-  </div>
-  <!-- logo -->
+<header>
+  <div class="container">
+    <div class="logo"><a href="/">Shortvarse</a></div>
+    <ul>
+      {
+        navData.map((link) => (
+          <li>
+            <a href={link.path}>{link.name}</a>
+          </li>
+        ))
+      }
+    </ul>
 
-  <!-- nav menu list  -->
-  <ul class="lg:flex w-[50%] justify-between">
-    {
-      navData.map((listData) => (
-        <li class="text-xl font-bold font-nunito hover:text-blue-900 duration-300">
-          <a href={listData.path}>{listData.name}</a>
-        </li>
-      ))
-    }
-  </ul>
-  <!-- nav menu list  -->
-</nav>
+    <!-- mobile-menu  -->
+  </div>
+</header>
+
+<style>
+  header {
+    min-height: 10vh;
+    display: grid;
+    place-items: center;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+  .container {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  ul > li a {
+    text-transform: uppercase;
+    color: var(--clr-black);
+    font-weight: 600;
+  }
+
+  ul > li:last-child a {
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+    padding: 0.5em 1em;
+    border-radius: 0.3rem;
+    border: 1px solid currentColor;
+    transition: 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  ul > li:last-child a:hover {
+    background-color: transparent;
+    border: 1px solid var(--clr-blue);
+    color: var(--clr-blue);
+  }
+
+  .logo a {
+    font-size: var(--h4);
+    font-weight: 800;
+    color: var(--clr-blue);
+    text-transform: uppercase;
+  }
+</style>

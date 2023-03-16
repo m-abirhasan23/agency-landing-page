@@ -1,12 +1,16 @@
 ---
-// components imports
+import Footer from "../components/Footer.astro";
 import Hero from "../components/Hero.astro";
-import Test from "../components/Test.astro";
-import MainLayouts from "../layouts/MainLayouts.astro";
+import Join from "../components/Join.astro";
+import Pricing from "../components/Pricing.astro";
+import Subhero from "../components/Subhero.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayouts>
+<MainLayout title="Shortverse | The Universe of shortsfilms">
   <Hero />
-  <!-- <Carousel /> -->
-  <Test />
-</MainLayouts>
+  <Subhero />
+  <Pricing />
+  <Join />
+  <Footer />
+</MainLayout>

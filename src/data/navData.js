@@ -1,27 +1,11 @@
-
-
-
- const navData=[
-
-    {
-        name:"Home",
-        path:"/"
-    },
-    {
-        name:"About Us",
-        path:"/about/"
-    },
-    {
-        name:"Our Works",
-        path:"/work/"
-    },
-    {
-        name:"Contact us",
-        path:"/contact/"
-    },
-        
-       
-
-
+const navData=[
+//  {   path:"/explore",
+//     name:"explore"},
+//  {   path:"/",
+//     name:"connect"},
+ {   path:"/signup",
+    name:"signup"},
+ 
 ]
+
 export default navData

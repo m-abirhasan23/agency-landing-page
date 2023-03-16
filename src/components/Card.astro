@@ -1,0 +1,50 @@
+---
+const { data } = Astro.props;
+const { title, img, subtitle } = data;
+---
+
+<article>
+  <figure>
+    <figcaption class="subtitle">{title}</figcaption>
+    <p>{subtitle}</p>
+  </figure>
+  <img src={img} alt={title} />
+</article>
+
+<style>
+  article {
+    display: flex;
+    min-height: 50vh;
+
+    margin: 4rem 0;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    width: 90%;
+    margin-inline: auto;
+  }
+  figure {
+    width: 60%;
+  }
+
+  p {
+    font-size: var(--h5);
+    color: rgba(21, 21, 21, 0.8);
+  }
+  figcaption::selection,
+  p::selection {
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+  }
+  img {
+    width: 40%;
+    object-fit: cover;
+    scale: 0.95;
+    transition: scale 400ms;
+    transition-delay: 100ms;
+    /* aspect-ratio: 1:1; */
+  }
+  img:hover {
+    scale: 1;
+  }
+</style>
