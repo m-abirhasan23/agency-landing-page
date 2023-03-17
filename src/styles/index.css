@@ -46,3 +46,10 @@ body {
   line-height: 100%;
   padding-block: 0.5em;
 }
+
+@media (max-width: 600px) {
+  .subtitle {
+    width: 100%;
+    font-size: var(--h5);
+  }
+}
