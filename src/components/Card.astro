@@ -47,4 +47,19 @@ const { title, img, subtitle } = data;
   img:hover {
     scale: 1;
   }
+  @media (max-width: 600px) {
+    article {
+      flex-wrap: wrap;
+    }
+    figcaption {
+      width: 100%;
+    }
+    p {
+      width: 100%;
+      font-size: var(--h6);
+    }
+    img {
+      width: 100%;
+    }
+  }
 </style>

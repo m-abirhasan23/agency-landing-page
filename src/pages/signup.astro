@@ -100,4 +100,16 @@ import MainLayout from "../layouts/MainLayout.astro";
     border: 1px solid var(--clr-blue);
     cursor: pointer;
   }
+  @media (max-width: 600px) {
+    .content {
+      display: none;
+    }
+    form {
+      width: 100%;
+      margin-top: 2rem;
+    }
+    form > * {
+      width: 80%;
+    }
+  }
 </style>
