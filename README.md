@@ -1,55 +1,39 @@
-# Astro Starter Kit: Basics
-
-```
-npm create astro@latest -- --template basics
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+![image](https://user-images.githubusercontent.com/126692834/233559130-f329fae4-df77-491e-8fe4-8f0e23e0c5fc.png)
 
 
-## 🚀 Project Structure
+# ShortVerse
+Welcome to the ShortVerse website! This is a simple web application that generates random short verses of poetry. The website is designed to provide a quick and easy way to access creative inspiration, and it is built using modern web technologies.
 
-Inside of your Astro project, you'll see the following folders and files:
+### Features
+The ShortVerse website offers the following features:
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+A homepage that displays a random short verse of poetry, along with a "Generate" button to get a new verse.
+A "Share" button that allows users to share the current verse on Twitter, with a pre-populated tweet.
+A "Copy" button that allows users to copy the current verse to their clipboard, for easy pasting into other applications.
+A responsive design that works well on desktop and mobile devices.
+### Technologies
+The ShortVerse website is built using the following technologies:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+HTML5 for the website's structure and content.
+CSS3 for the website's layout and styling.
+JavaScript for the website's interactivity and functionality.
+Netlify for hosting the website and deploying changes.
+### Usage
+To use the ShortVerse website, simply navigate to the following URL:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+https://shortverse.netlify.app/
 
-Any static assets, like images, can be placed in the `public/` directory.
+From there, you can click the "Generate" button to get a new random short verse of poetry. You can also click the "Share" button to share the current verse on Twitter, or the "Copy" button to copy the current verse to your clipboard. If you enjoy a particular verse, you can also refresh the page to save it and access it again later.
 
-## 🧞 Commands
+### Development
+If you want to contribute to the ShortVerse website's development, you can clone the project's repository from GitHub:
 
-All commands are run from the root of the project, from a terminal:
+https://github.com/m-abirhasan23/agency-landing-page
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
+From there, you can make changes to the website's code using your preferred text editor or IDE, and use the website's simple JavaScript code to add new features or modify existing ones. Once you are satisfied with your changes, you can submit a pull request to the project's maintainers, who will review your changes and merge them if they are deemed suitable.
 
-## 👀 Want to learn more?
+### Credits
+The ShortVerse website was designed and developed by {Name}, with contributions from {Name}, {Name}, and {Name}. The website's short verses were sourced from {source}.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### License
+The ShortVerse website is licensed under the MIT License. You can find the full license text in the LICENSE file in the project's repository.
